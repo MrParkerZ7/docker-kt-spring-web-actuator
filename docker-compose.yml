@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+#        environment:
+#            VERSION: dev
+        ports:
+            - "8080:8080"
+        command: mvn spring-boot:run # use for auto run spring-boot
